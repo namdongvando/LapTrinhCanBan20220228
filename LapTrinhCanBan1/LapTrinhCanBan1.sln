@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LapTrinhCanBan1", "LapTrinhCanBan1\LapTrinhCanBan1.csproj", "{B8675368-D992-498E-B8AC-01976302932A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToanTu", "ToanTu\ToanTu.csproj", "{E0572DAC-1A1A-4631-B6DF-61B26C229FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8675368-D992-498E-B8AC-01976302932A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8675368-D992-498E-B8AC-01976302932A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8675368-D992-498E-B8AC-01976302932A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8675368-D992-498E-B8AC-01976302932A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0572DAC-1A1A-4631-B6DF-61B26C229FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0572DAC-1A1A-4631-B6DF-61B26C229FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0572DAC-1A1A-4631-B6DF-61B26C229FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0572DAC-1A1A-4631-B6DF-61B26C229FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C0EDA4C-011C-4094-8759-80B6F840F263}
+	EndGlobalSection
+EndGlobal
