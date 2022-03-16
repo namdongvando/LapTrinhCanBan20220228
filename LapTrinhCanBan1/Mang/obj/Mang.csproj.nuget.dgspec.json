@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NN\\Desktop\\Share\\C#\\Repo\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj": {}
+    "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NN\\Desktop\\Share\\C#\\Repo\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj": {
+    "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NN\\Desktop\\Share\\C#\\Repo\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj",
+        "projectUniqueName": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj",
         "projectName": "Mang",
-        "projectPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\Repo\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj",
+        "projectPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\Mang.csproj",
         "packagesPath": "C:\\Users\\NN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\Repo\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\obj\\",
+        "outputPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\Mang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NN\\AppData\\Roaming\\NuGet\\NuGet.Config",

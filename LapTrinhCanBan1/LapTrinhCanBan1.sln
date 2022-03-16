@@ -17,15 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiaiPhuongTrinhBac1", "Giai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiaiPhuongTrinhBac2", "GiaiPhuongTrinhBac2\GiaiPhuongTrinhBac2.csproj", "{20CEAEFF-29D3-4914-9BCC-3BF3E7414E4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VongLap", "VongLap\VongLap.csproj", "{65AA7C9C-667C-43DE-BBE1-93FE41023BDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VongLap", "VongLap\VongLap.csproj", "{65AA7C9C-667C-43DE-BBE1-93FE41023BDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VongLapSoNguyenTo", "VongLapSoNguyenTo\VongLapSoNguyenTo.csproj", "{9C7C466B-5DA2-42DC-9D23-9EA724FD73FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VongLapSoNguyenTo", "VongLapSoNguyenTo\VongLapSoNguyenTo.csproj", "{9C7C466B-5DA2-42DC-9D23-9EA724FD73FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VongLapBangCuuChuong", "VongLapBangCuuChuong\VongLapBangCuuChuong.csproj", "{94092E6F-ACA5-4734-97F0-B48CE0CE693F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VongLapBangCuuChuong", "VongLapBangCuuChuong\VongLapBangCuuChuong.csproj", "{94092E6F-ACA5-4734-97F0-B48CE0CE693F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VongLapWhile", "VongLapWhile\VongLapWhile.csproj", "{9843C735-F79D-4C31-A84E-D55F8AF6D1DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VongLapWhile", "VongLapWhile\VongLapWhile.csproj", "{9843C735-F79D-4C31-A84E-D55F8AF6D1DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mang", "Mang\Mang.csproj", "{72C94E16-B5D7-4D66-AEE5-CB031DC01F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mang", "Mang\Mang.csproj", "{72C94E16-B5D7-4D66-AEE5-CB031DC01F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanHang", "QuanLyBanHang\QuanLyBanHang.csproj", "{CD5040C6-8654-4B6A-AD65-C4B4588D669E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{72C94E16-B5D7-4D66-AEE5-CB031DC01F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C94E16-B5D7-4D66-AEE5-CB031DC01F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C94E16-B5D7-4D66-AEE5-CB031DC01F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5040C6-8654-4B6A-AD65-C4B4588D669E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5040C6-8654-4B6A-AD65-C4B4588D669E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5040C6-8654-4B6A-AD65-C4B4588D669E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5040C6-8654-4B6A-AD65-C4B4588D669E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
