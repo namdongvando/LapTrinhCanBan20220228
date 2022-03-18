@@ -12,6 +12,13 @@ namespace QuanLyBanHang
     {
         public FormMain()
         {
+            Form fDangNhap = new Form1();
+           var isLogin = fDangNhap.ShowDialog();
+            // dang nhap không thang cong
+            // thoát
+            if (isLogin != DialogResult.OK) {
+                Close(); 
+            }
             InitializeComponent();
         }
 
@@ -28,7 +35,16 @@ namespace QuanLyBanHang
                 double a = double.Parse(txtSoA.Text.Trim());
                 double b = double.Parse(txtSoB.Text.Trim());
                 double c = double.Parse(txtSoC.Text.Trim());
-                string nghiem = PhuongTrinhBac2(a,b,c);
+
+                PTB2 phuongTrinhBac2 = new PTB2(a,b,c);
+                //phuongTrinhBac2.a = a;
+                //phuongTrinhBac2.b = b;
+                //phuongTrinhBac2.c = c;
+                 
+                MessageBox.Show(phuongTrinhBac2.a.ToString());
+                //phuongTrinhBac2.GiaiPhuongTrinh();
+                //string nghiem = PhuongTrinhBac2(a,b,c);
+                string nghiem = phuongTrinhBac2.GiaiPhuongTrinh();
                 txtKetQua.Text = nghiem;
             }
             catch (Exception ex)
@@ -100,6 +116,11 @@ namespace QuanLyBanHang
             txtSoB.Text = "";
             txtSoC.Text = "";
             txtKetQua.Text = "";
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

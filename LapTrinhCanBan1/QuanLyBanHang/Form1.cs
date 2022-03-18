@@ -63,9 +63,9 @@ namespace QuanLyBanHang
                 if (taiKhoan != "admin" || matKhau != "123456") {
                     throw new Exception("Tài Khoản/ Mật khẩu không hợp lệ");
                 }
-                throw new Exception("Đăng Nhập Thành Công");
-
-            }
+                //  throw new Exception("Đăng Nhập Thành Công");
+                DialogResult = DialogResult.OK;
+            }  
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -81,14 +81,14 @@ namespace QuanLyBanHang
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var kiemTra = MessageBox.Show(
-                "Bạn có muốn thoát không?",
-                "Thông Báo",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);
-            if (kiemTra != DialogResult.Yes) {
-                e.Cancel = true;
-            }
+            //var kiemTra = MessageBox.Show(
+            //    "Bạn có muốn thoát không?",
+            //    "Thông Báo",
+            //    MessageBoxButtons.YesNo,
+            //    MessageBoxIcon.Warning);
+            //if (kiemTra != DialogResult.Yes) {
+            //    e.Cancel = true;
+            //}
 
         }
     }
