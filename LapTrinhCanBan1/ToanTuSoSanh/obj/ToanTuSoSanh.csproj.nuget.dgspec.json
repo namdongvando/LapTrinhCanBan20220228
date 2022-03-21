@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj": {}
+    "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinh\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj": {
+    "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinh\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj",
+        "projectUniqueName": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinh\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj",
         "projectName": "ToanTuSoSanh",
-        "projectPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj",
+        "projectPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinh\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\ToanTuSoSanh.csproj",
         "packagesPath": "C:\\Users\\NN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\obj\\",
+        "outputPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinh\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\ToanTuSoSanh\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NN\\AppData\\Roaming\\NuGet\\NuGet.Config",
