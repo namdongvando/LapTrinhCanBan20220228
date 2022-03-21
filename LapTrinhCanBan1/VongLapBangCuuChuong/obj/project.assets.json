@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\VongLapBangCuuChuong.csproj",
+      "projectUniqueName": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\VongLapBangCuuChuong.csproj",
       "projectName": "VongLapBangCuuChuong",
-      "projectPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\VongLapBangCuuChuong.csproj",
+      "projectPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\VongLapBangCuuChuong.csproj",
       "packagesPath": "C:\\Users\\NN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NN\\Desktop\\Share\\C#\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\obj\\",
+      "outputPath": "C:\\Users\\NN\\Documents\\GitHub\\LapTrinhCanBan20220228\\LapTrinhCanBan1\\VongLapBangCuuChuong\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NN\\AppData\\Roaming\\NuGet\\NuGet.Config",

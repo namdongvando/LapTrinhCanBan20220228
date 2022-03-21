@@ -1,0 +1,13 @@
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.exe
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.deps.json
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.runtimeconfig.json
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.runtimeconfig.dev.json
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.dll
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\bin\Debug\netcoreapp3.1\VongLapSoNguyenTo.pdb
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.csprojAssemblyReference.cache
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.csproj.CoreCompileInputs.cache
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.AssemblyInfoInputs.cache
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.AssemblyInfo.cs
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.dll
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.pdb
+C:\Users\NN\Documents\GitHub\LapTrinhCanBan20220228\LapTrinhCanBan1\VongLapSoNguyenTo\obj\Debug\netcoreapp3.1\VongLapSoNguyenTo.genruntimeconfig.cache
