@@ -20,33 +20,33 @@ namespace QuanLyNhanVien
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            NhanVien ti = new NhanVien()
-            {
-                Id = Guid.NewGuid(),
-                FullName = "Ti Tran Van",
-                BOD = new DateTime(2000, 1, 1),
-                Address = "HCM",
-                Email = "titv@gmail.com",
-                Phone = "01922323",
-                Username = "titv",
-                Password = "123456"
-            };
-            NhanVien teo = new NhanVien()
-            {
-                Id = Guid.NewGuid(),
-                FullName = "Teo Nguyen Van",
-                BOD = new DateTime(2000, 1, 1),
-                Address = "HCM",
-                Email = "teonv@gmail.com",
-                Phone = "0900007999",
-                Username = "teonv",
-                Password = "123456"
-            };
-            //List<NhanVien> dsNhanVien = new List<NhanVien>();
-            //dsNhanVien.Add(ti);
-            //dsNhanVien.Add(teo);
-            NhanVien.DSNhanVien(ti);
-            NhanVien.DSNhanVien(teo);
+            //NhanVien ti = new NhanVien()
+            //{
+            //    Id = Guid.NewGuid(),
+            //    FullName = "Ti Tran Van",
+            //    BOD = new DateTime(2000, 1, 1),
+            //    Address = "HCM",
+            //    Email = "titv@gmail.com",
+            //    Phone = "01922323",
+            //    Username = "titv",
+            //    Password = "123456"
+            //};
+            //NhanVien teo = new NhanVien()
+            //{
+            //    Id = Guid.NewGuid(),
+            //    FullName = "Teo Nguyen Van",
+            //    BOD = new DateTime(2000, 1, 1),
+            //    Address = "HCM",
+            //    Email = "teonv@gmail.com",
+            //    Phone = "0900007999",
+            //    Username = "teonv",
+            //    Password = "123456"
+            //};
+            ////List<NhanVien> dsNhanVien = new List<NhanVien>();
+            ////dsNhanVien.Add(ti);
+            ////dsNhanVien.Add(teo);
+            //NhanVien.DSNhanVien(ti);
+            //NhanVien.DSNhanVien(teo);
             dgvDSNhanVien.DataSource = NhanVien.DSNhanVien().ToList();
         }
 
