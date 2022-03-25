@@ -87,5 +87,24 @@ namespace QuanLyNhanVien
             f.MdiParent = this;
             f.Show();
         }
+
+        private void đọcFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new FormReadJson();
+               
+            f.Show();
+        }
+
+        private void jsonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new FormOpenImages();
+            f.Show();
+           
+        }
     }
 }

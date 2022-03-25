@@ -1,0 +1,22 @@
+﻿[
+{
+	"Id":"859b9bc8-de0b-4962-8a84-ecee21a006af", 
+  "FullName" :"Teo Nguyễn Văn" ,
+  "BOD"  : "2000-01-01",
+   "Email" :"teonguyen@gmail.com"  ,
+    "Phone": "037244444",
+    "Address"  :"HCM",
+    "Username" : "teonv",
+    "Password"  : "123456" 
+},
+{
+	"Id":"859b9bc8-de0b-4962-8a84-ecee21a00623", 
+  "FullName" :"Ti Nguyễn Văn" ,
+  "BOD"  : "2000-01-01",
+   "Email" :"tinguyen@gmail.com"  ,
+    "Phone": "037244444",
+    "Address"  :"HCM",
+    "Username" : "tinv",
+    "Password"  : "123456" 
+} 
+]
