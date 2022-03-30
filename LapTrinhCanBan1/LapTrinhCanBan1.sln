@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuongTrinh", "PhuongTrinh\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanVien", "QuanLyNhanVien\QuanLyNhanVien.csproj", "{499CA8C8-8A29-4082-BB4C-9FAF344C045C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanHangDB", "QuanLyBanHangDB\QuanLyBanHangDB.csproj", "{87F7FF99-160E-4B69-8E2C-C0B9E7192FEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{499CA8C8-8A29-4082-BB4C-9FAF344C045C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{499CA8C8-8A29-4082-BB4C-9FAF344C045C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{499CA8C8-8A29-4082-BB4C-9FAF344C045C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F7FF99-160E-4B69-8E2C-C0B9E7192FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F7FF99-160E-4B69-8E2C-C0B9E7192FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F7FF99-160E-4B69-8E2C-C0B9E7192FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F7FF99-160E-4B69-8E2C-C0B9E7192FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
