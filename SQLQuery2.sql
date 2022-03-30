@@ -54,6 +54,22 @@ select * from Products order by UnitPrice
 update Products
 set SalePrice = UnitPrice * 0.8
 
+delete Products where CategoryID = 8
+delete Categories where CategoryID = 8
+CREATE TABLE table_name( 
+   column1 nchar(50), 
+   column2  nchar(50), 
+   column3  nchar(50),  
+   PRIMARY KEY( column1 )
+);
 
+drop table table_name
+
+CREATE VIEW XemSanPham  
+AS  
+SELECT p.FirstName, p.LastName, e.HireDate  
+FROM HumanResources.Employee AS e JOIN Person.Person AS  p  
+ON e.BusinessEntityID = p.BusinessEntityID ;   
+GO  
 
 
