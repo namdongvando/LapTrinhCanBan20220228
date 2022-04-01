@@ -47,6 +47,42 @@ namespace QuanLyBanHangDB
                 txtName.Focus();
                 throw new Exception("Bạn Chưa Nhập Tên Danh Mục");
             }
+        } 
+        private void FormThemDanhMuc_Load(object sender, EventArgs e)
+        {
+            SetFormDefaut();
+        }
+
+        private void SetFormDefaut()
+        {
+            if (Category.SuaCategory == null)
+            { 
+                //thêm
+                Category.SuaCategory = new Category();
+            }
+            else {
+                // sửa
+                btnSua.Enabled = true;
+                button2.Enabled = false;
+            }
+            var Cat = Category.SuaCategory;
+            txtMa.Text = Cat.CategoryID.ToString();
+            txtName.Text = Cat.CategoryName;
+            txtMoTa.Text = Cat.Description;
+           
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            Category catDb =
+               _db.Categories.FirstOrDefault(cat => cat.CategoryID == int.Parse(txtMa.Text));
+
+            catDb.CategoryName = txtName.Text;
+            catDb.CategoryID = int.Parse(txtMa.Text);
+            catDb.Description = txtMoTa.Text;
+            _db.SubmitChanges();
+            // đóng form
+            DialogResult = DialogResult.OK;
         }
     }
 }

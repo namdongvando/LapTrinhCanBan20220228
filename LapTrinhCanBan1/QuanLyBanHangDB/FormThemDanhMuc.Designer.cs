@@ -50,6 +50,7 @@
             this.btnSua.TabIndex = 20;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtMa
             // 
@@ -146,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormThemDanhMuc";
             this.Text = "FormThemDanhMuc";
+            this.Load += new System.EventHandler(this.FormThemDanhMuc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

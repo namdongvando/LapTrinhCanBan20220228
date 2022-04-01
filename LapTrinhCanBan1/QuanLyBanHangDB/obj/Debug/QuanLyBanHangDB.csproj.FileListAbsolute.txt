@@ -9,3 +9,5 @@ C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\Qua
 C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\QuanLyBanHangDB\obj\Debug\QuanLyBanHangDB.exe
 C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\QuanLyBanHangDB\obj\Debug\QuanLyBanHangDB.pdb
 C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\QuanLyBanHangDB\obj\Debug\QuanLyBanHangDB.FormThemDanhMuc.resources
+C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\QuanLyBanHangDB\obj\Debug\QuanLyBanHangDB.FormProduct.resources
+C:\Users\NN\Desktop\Share\C#\LapTrinh\LapTrinhCanBan20220228\LapTrinhCanBan1\QuanLyBanHangDB\obj\Debug\QuanLyBanHangDB.FormThemSanPham.resources

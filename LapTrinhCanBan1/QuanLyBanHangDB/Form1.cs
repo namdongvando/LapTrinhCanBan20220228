@@ -89,10 +89,19 @@ namespace QuanLyBanHangDB
             string tenDanhMuc = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
 
             string MotaDanhMuc = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-             
-           // _SuaCat.CategoryID = int.Parse(maDanhMuc);
+
+            // _SuaCat.CategoryID = int.Parse(maDanhMuc);
+            Category.SuaCategory = new Category()
+            {
+                CategoryID = int.Parse(maDanhMuc),
+                CategoryName = tenDanhMuc,
+                Description = MotaDanhMuc
+            }; 
             Form f = new FormThemDanhMuc();
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                _db = new DataBanHangDataContext();
+                dataGridView1.DataSource = _db.Categories.ToList();
+            }
             // 
             //Category cat = new Category()
             //{
@@ -129,10 +138,17 @@ namespace QuanLyBanHangDB
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Category.SuaCategory = null;
             Form f = new FormThemDanhMuc();
             if (f.ShowDialog() == DialogResult.OK) {
                 dataGridView1.DataSource = _db.Categories.ToList();
             }
+        }
+
+        private void sảnPhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new FormProduct();
+            f.ShowDialog();
         }
     }
 }

@@ -43,8 +43,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSua = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.sảnPhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -142,7 +145,7 @@
             // txtMa
             // 
             this.txtMa.Enabled = false;
-            this.txtMa.Location = new System.Drawing.Point(94, 24);
+            this.txtMa.Location = new System.Drawing.Point(94, 35);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(205, 20);
             this.txtMa.TabIndex = 8;
@@ -151,7 +154,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 27);
+            this.label3.Location = new System.Drawing.Point(9, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 9;
@@ -178,6 +181,23 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sảnPhamToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // sảnPhamToolStripMenuItem
+            // 
+            this.sảnPhamToolStripMenuItem.Name = "sảnPhamToolStripMenuItem";
+            this.sảnPhamToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.sảnPhamToolStripMenuItem.Text = "Sản Phẩm";
+            this.sảnPhamToolStripMenuItem.Click += new System.EventHandler(this.sảnPhamToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,11 +217,15 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +248,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem sảnPhamToolStripMenuItem;
     }
 }
 
