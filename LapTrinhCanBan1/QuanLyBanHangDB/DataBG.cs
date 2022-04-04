@@ -9,5 +9,6 @@ namespace QuanLyBanHangDB
     class DataBG
     {
         public static Product EditProduct { get; set; }
+        public static string OrderId { get; set; }
     }
 }

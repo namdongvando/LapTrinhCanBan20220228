@@ -61,6 +61,7 @@ namespace QuanLyBanHangDB
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            DataBG.EditProduct = new Product();
             Form f = new FormThemSanPham();
             f.ShowDialog();
         }
@@ -69,11 +70,16 @@ namespace QuanLyBanHangDB
         {
             string maSanPham =
                 dgvDSSanPham.Rows[e.RowIndex].Cells[0].Value.ToString();
-
+            if (DataBG.EditProduct == null) {
+                DataBG.EditProduct = new Product();
+            }
             DataBG.EditProduct.ProductID = int.Parse(maSanPham);
 
             Form f = new FormThemSanPham();
-            f.ShowDialog();
+            if (f.ShowDialog() == DialogResult.OK) {
+                _db = new DataBanHangDataContext();
+                btnTimKiem_Click(sender, e);
+            }
         }
     }
 }

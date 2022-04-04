@@ -34,11 +34,23 @@ namespace QuanLyBanHangDB
         }
 
         private void FormThemSanPham_Load(object sender, EventArgs e)
-        { 
+        {
             LoadDanhMuc();
             LoadNhaCungCap();
-            if (DataBG.EditProduct.ProductID != null) {
+            if (DataBG.EditProduct.ProductID != 0)
+            {
+                // sửa
                 SetFormDefaut();
+                btnThem.Visible = false;
+                btnSua.Visible = true;
+                btnXoa.Visible = true;
+            }
+            else
+            {
+                // them
+                btnThem.Visible = true;
+                btnSua.Visible = false;
+                btnXoa.Visible = false;
             }
         }
 
@@ -47,8 +59,17 @@ namespace QuanLyBanHangDB
             Product sp = _db.Products
                 .FirstOrDefault(
                 item => item.ProductID == DataBG.EditProduct.ProductID);
+            if (sp == null)
+                return;
             txtMa.Text = sp.ProductID.ToString();
-
+            txtTen.Text = sp.ProductName.ToString();
+            txtGia.Text = sp.UnitPrice.ToString();
+            cbbNCC.SelectedValue = sp.SupplierID;
+            cbbDM.SelectedValue = sp.CategoryID;
+            txtTonKho.Text = sp.UnitsInStock.ToString();
+            txtGiamGia.Text = sp.SalePrice.ToString();
+            txtSapXep.Text = sp.ReorderLevel.ToString();
+            ccbNgungBan.Checked = sp.Discontinued;
         }
 
         private void LoadNhaCungCap()
@@ -76,9 +97,9 @@ namespace QuanLyBanHangDB
         {
             try
             {
-                 
+
                 CheckInput();
-                Category danhMuc = (Category) cbbDM.SelectedItem;
+                Category danhMuc = (Category)cbbDM.SelectedItem;
                 Supplier ncc = (Supplier)cbbNCC.SelectedItem;
                 // có dữ liệu ok
                 Product sp = new Product()
@@ -114,7 +135,7 @@ namespace QuanLyBanHangDB
                 throw new Exception("Bạn Chưa Nhập Tên Sản Phẩm");
             }
             double a;
-            if (double.TryParse(txtGia.Text,out a)==false)
+            if (double.TryParse(txtGia.Text, out a) == false)
             {
                 txtGia.Focus();
                 txtGia.SelectAll();
@@ -127,6 +148,81 @@ namespace QuanLyBanHangDB
                 throw new Exception("Giá Không Đúng Định Dạng");
             }
 
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CheckInput();
+                Category danhMuc = (Category)cbbDM.SelectedItem;
+                Supplier ncc = (Supplier)cbbNCC.SelectedItem;
+                // có dữ liệu ok
+                Product sp = new Product()
+                {
+                    ProductID = int.Parse(txtMa.Text),
+                    ProductName = txtTen.Text,
+                    CategoryID = danhMuc.CategoryID,
+                    SupplierID = ncc.SupplierID,
+                    SalePrice = decimal.Parse(txtGiamGia.Text),
+                    UnitPrice = decimal.Parse(txtGia.Text),
+                    UnitsInStock = short.Parse(txtTonKho.Text),
+                    Discontinued = ccbNgungBan.Checked,
+                    UnitsOnOrder = 0,
+                    QuantityPerUnit = txtQuyCachDongGoi.Text,
+                    ReorderLevel = short.Parse(txtSapXep.Text)
+                };
+
+                var producData = _db.Products.FirstOrDefault(item => item.ProductID == sp.ProductID);
+                if (producData == null)
+                {
+                    return;
+                }
+                producData.ProductName = sp.ProductName;
+                producData.CategoryID = sp.CategoryID;
+                producData.SupplierID = sp.SupplierID;
+                producData.SalePrice = sp.SalePrice;
+                producData.UnitPrice = sp.UnitPrice;
+                producData.UnitsInStock = sp.UnitsInStock;
+                producData.Discontinued = sp.Discontinued;
+                producData.UnitsOnOrder = sp.UnitsOnOrder;
+                producData.QuantityPerUnit = sp.QuantityPerUnit;
+                producData.ReorderLevel = sp.ReorderLevel;
+                _db.SubmitChanges();
+                DialogResult = DialogResult.OK;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var isOK = MessageBox.Show("Bạn Muốn Xóa Sản Phẩm Nảy?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                if (isOK == DialogResult.OK)
+                {
+                    // đòng ý xóa
+                    // tìm sp muốn xóa
+                    var sp = _db.Products.FirstOrDefault(
+                        i => i.ProductID == int.Parse(txtMa.Text)
+                        );
+                    // đăng ký xóa
+                    _db.Products.DeleteOnSubmit(sp);
+                    // thực hiện xóa
+                    _db.SubmitChanges();
+                    DialogResult = DialogResult.OK;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không Thể Xóa Sản Phẩm Này");
+            }
+            
         }
     }
 }

@@ -150,5 +150,11 @@ namespace QuanLyBanHangDB
             Form f = new FormProduct();
             f.ShowDialog();
         }
+
+        private void đơnHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new FormDonHang();
+            f.ShowDialog();
+        }
     }
 }

@@ -50,6 +50,8 @@
             this.ccbNgungBan = new System.Windows.Forms.CheckBox();
             this.cbbNCC = new System.Windows.Forms.ComboBox();
             this.cbbDM = new System.Windows.Forms.ComboBox();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -240,11 +242,33 @@
             this.cbbDM.Size = new System.Drawing.Size(232, 21);
             this.cbbDM.TabIndex = 27;
             // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(424, 275);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 28;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(272, 275);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 29;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // FormThemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 318);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.cbbDM);
             this.Controls.Add(this.cbbNCC);
             this.Controls.Add(this.ccbNgungBan);
@@ -299,5 +323,7 @@
         private System.Windows.Forms.CheckBox ccbNgungBan;
         private System.Windows.Forms.ComboBox cbbNCC;
         private System.Windows.Forms.ComboBox cbbDM;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
