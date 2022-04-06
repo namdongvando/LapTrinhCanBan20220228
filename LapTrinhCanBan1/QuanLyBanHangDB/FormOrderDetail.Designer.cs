@@ -123,6 +123,7 @@
             this.btnXemKH.TabIndex = 9;
             this.btnXemKH.Text = "Xem";
             this.btnXemKH.UseVisualStyleBackColor = true;
+            this.btnXemKH.Click += new System.EventHandler(this.btnXemKH_Click);
             // 
             // FormOrderDetail
             // 

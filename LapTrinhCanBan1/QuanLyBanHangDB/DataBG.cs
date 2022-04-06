@@ -10,5 +10,6 @@ namespace QuanLyBanHangDB
     {
         public static Product EditProduct { get; set; }
         public static string OrderId { get; set; }
+        public static string KhachHang { get; set; }
     }
 }

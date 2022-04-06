@@ -51,5 +51,13 @@ namespace QuanLyBanHangDB
                 ).ToList();
 
         }
+
+        private void btnXemKH_Click(object sender, EventArgs e)
+        {
+            DataBG.KhachHang = txtMaKhachHang.Text;
+
+            Form f = new FormKhachHang();
+            f.Show();
+        }
     }
 }
