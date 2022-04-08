@@ -1,0 +1,16 @@
+body{
+    font-family: sans-serif;
+}
+p{
+    color: goldenrod !important;
+}
+.tieude{
+    color: navy;
+}
+ 
+.Do{
+    color: red;
+}
+#main{
+    background-color: red;
+} 
