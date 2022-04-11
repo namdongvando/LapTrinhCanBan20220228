@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="/css/DangKy.css">
+</head>
+<body>
+    <!-- ho ten, sdt, email, tai khoan, mat khau,dia chi -->
+    <div class="content-dangnhap" >
+        <div class="left"> 
+
+        </div>
+        <div class="right" >
+            <h1 style="text-align: center;" >Đăng Nhập</h1>
+            <form action="" method="post" > 
+                <div class="form-control" >
+                    <label>Tài Khoản</label>
+                    <input required type="text" 
+                    oninvalid="setCustomValidity('Bạn Chưa Nhập tài khoản')"
+                    onchange="setCustomValidity('')"
+                    placeholder="Tài Khoản" name="" value=""  >
+                </div> 
+                <div class="form-control" >
+                    <label>Mật Khẩu</label>
+                    <input required type="password" 
+                    oninvalid="setCustomValidity('Bạn chưa nhập mật khẩu')"
+                    onchange="setCustomValidity('')"
+                    placeholder="Mật khẩu" name="" value=""  >
+                </div> 
+                <p><a href="/quenmatkhau.html">Quyên mật khẩu?</a>    
+                <div class="form-control" style="text-align: right;">
+                    <button class="btn-dangky" >Đăng Nhập</button>
+                </div>
+        
+            </form>    
+            <p>Bạn đã chưa có tài khoản? Hãy 
+            <a href="/dangky.html">đăng ký</a>    
+            </p>
+            <p style="text-align: center;" >-----Hoặc-----</p>
+            <a class="btn-google" href="#">Đăng Ký bằng tài khoản goolge</a>
+            <a class="btn-facebook" href="#">Đăng Ký bằng tài khoản facebook</a>
+     
+        </div>
+      
+    </div> 
+</body>
+</html>

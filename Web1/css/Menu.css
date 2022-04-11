@@ -1,0 +1,24 @@
+.Menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+/* thẻ li lằm trong .Menu  */
+.Menu li {
+    width: 50%;
+}
+
+.Menu li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.Menu li a:hover {
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+
+}

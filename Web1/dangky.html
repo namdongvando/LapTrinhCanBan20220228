@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="/css/DangKy.css">
+</head>
+<body>
+    <!-- ho ten, sdt, email, tai khoan, mat khau,dia chi -->
+    <div class="container" >
+        <form action="" method="post" >
+            <div class="form-control" >
+                <label>Họ & Tên</label>
+                <input required type="text" 
+                oninvalid="setCustomValidity('Bạn Chưa nhập họ tên')"
+                onchange="setCustomValidity('')"
+                placeholder="Nhập Tên" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>Ngày Sinh</label>
+                <input  type="date" max="2004-04-10" placeholder="Ngày Sinh" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>SĐT</label>
+                <input required maxlength="11" minlength="10"
+                oninvalid="setCustomValidity('SĐT Không Hợp Lệ')"
+                onchange="setCustomValidity('')"
+                pattern="\d*"
+                type="text" placeholder="Nhập SĐT" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>Email</label>
+                <input required type="email"
+                oninvalid="setCustomValidity('Email Không Hợp Lệ')"
+                onchange="setCustomValidity('')"
+                placeholder="Email" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>Tài Khoản</label>
+                <input required type="text" 
+                oninvalid="setCustomValidity('Bạn Chưa Nhập tài khoản')"
+                onchange="setCustomValidity('')"
+                placeholder="Tài Khoản" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>Mật Khẩu</label>
+                <input required type="password" 
+                oninvalid="setCustomValidity('Bạn chưa nhập mật khẩu')"
+                onchange="setCustomValidity('')"
+                placeholder="Mật khẩu" name="" value=""  >
+            </div> 
+            <div class="form-control" >
+                <label>Địa Chỉ </label>
+                <input  type="text" placeholder="Địa Chỉ" name="" value=""  >
+            </div> 
+            <div class="DieuKhoan">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas tempora quam, autem distinctio sint ipsam facere libero nihil eaque. Placeat animi mollitia molestias quis quam ducimus aut, dolores tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatibus fuga accusantium placeat nisi asperiores eaque voluptas commodi nulla vel beatae illum sed perspiciatis voluptate pariatur, id ex eveniet. 
+            </div>
+            <div class="form-control">
+                <p>bạn đồng ý với các quy định bên trên không?</p>
+                <label for="dongy" >
+                    Tôi đồng ý
+                </label>
+                <input id="dongy" type="checkbox" >
+            </div>
+            <div class="form-control">
+                <button class="btn-dangky" >Đăng Ký</button>
+            </div>
+    
+        </form>    
+        <p>Bạn đã có tài khoản? Hãy 
+        <a href="/dangnhap.html">đăng nhập</a>    
+        </p>
+        <p style="text-align: center;" >-----Hoặc-----</p>
+        <a class="btn-google" href="#">Đăng Ký bằng tài khoản goolge</a>
+        <a class="btn-facebook" href="#">Đăng Ký bằng tài khoản facebook</a>
+
+    </div>
+    
+
+
+</body>
+</html>
